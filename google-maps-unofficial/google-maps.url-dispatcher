@@ -1,10 +1,18 @@
 [
-  {
+  	{
 		"protocol": "https",
 		"domain-suffix": "maps.google.com"
 	},
 	{
 		"protocol": "https",
+		"domain-suffix": "maps.app.goo.gl"
+	},
+	{
+		"protocol": "http",
+		"domain-suffix": "maps.google.com"
+	},
+	{
+		"protocol": "http",
 		"domain-suffix": "maps.app.goo.gl"
 	}
 
