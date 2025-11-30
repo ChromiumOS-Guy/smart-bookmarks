@@ -6,5 +6,13 @@
   {
     "protocol": "http",
     "domain-suffix": "royalroad.com"
+  },
+  {
+    "protocol": "https",
+    "domain-suffix": "www.royalroad.com"
+  },
+  {
+    "protocol": "https",
+    "domain-suffix": "royalroad.com"
   }
 ]
