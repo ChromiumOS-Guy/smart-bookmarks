@@ -2,9 +2,10 @@
 
 # Define the Invidious instance URL
 BASE_URL="https://www.waze.com"
+USER_AGENT="'Mozilla/5.0 ( Linux; Mobile; Ubuntu 20.04 Like Android 9 ) Firefox/140.0.2-1'"
 
 # Define the base command for webapp-container
-WEBAPP_COMMAND="webapp-container --app-id="waze-unofficial.chromiumos-guy" --store-session-cookies --webapp-name=Waze --webappUrlPatterns=${BASE_URL}/* ,${BASE_URL}, https://accounts.google.com/*"
+WEBAPP_COMMAND="webapp-container --app-id="waze-unofficial.chromiumos-guy" --store-session-cookies --webapp-name=Waze --webappUrlPatterns=${BASE_URL}/* ,${BASE_URL}, https://accounts.google.com/* --user-agent-string=${USER_AGENT}"
 
 # Get the URL passed as an argument (%u)
 INPUT_URL="$1"
