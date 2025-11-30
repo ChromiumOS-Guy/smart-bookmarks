@@ -2,9 +2,10 @@
 
 # Define the Invidious instance URL
 INVIDIOUS_BASE_URL="https://inv.nadeko.net"
+USER_AGENT="'Mozilla/5.0 ( Linux; Mobile; Ubuntu 20.04 Like Android 9 ) Firefox/140.0.2-1'"
 
 # Define the base command for webapp-container
-WEBAPP_COMMAND="webapp-container --app-id=\"ubdious.chromiumos-guy\" --enable-back-forward --store-session-cookies --webapp-name=UBdious-port --enable-media-hub-audio --webappUrlPatterns=${INVIDIOUS_BASE_URL}, ${INVIDIOUS_BASE_URL}/*,https://*.youtube.com/*,https://youtube.com/*"
+WEBAPP_COMMAND="webapp-container --app-id=\"ubdious.chromiumos-guy\" --enable-back-forward --store-session-cookies --webapp-name=UBdious-port --enable-media-hub-audio --webappUrlPatterns=${INVIDIOUS_BASE_URL}, ${INVIDIOUS_BASE_URL}/*,https://*.youtube.com/*,https://youtube.com/* --user-agent-string=${USER_AGENT}"
 
 # Get the URL passed as an argument (%u)
 INPUT_URL="$1"
