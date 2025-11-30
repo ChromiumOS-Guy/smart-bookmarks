@@ -2,9 +2,10 @@
 
 # Define the BASE URL
 BASE_URL="https://www.royalroad.com"
+USER_AGENT="'Mozilla/5.0 ( Linux; Mobile; Ubuntu 20.04 Like Android 9 ) Firefox/140.0.2-1'"
 
 # Define the base command for webapp-container
-WEBAPP_COMMAND="webapp-container --app-id="royalroad-unofficial.chromiumos-guy" --enable-back-forward --store-session-cookies --webapp-name=RoyalRoad --webappUrlPatterns=${BASE_URL}, ${BASE_URL}/* , royalroad.com, royalroad.com/*"
+WEBAPP_COMMAND="webapp-container --app-id="royalroad-unofficial.chromiumos-guy" --enable-back-forward --store-session-cookies --webapp-name=RoyalRoad --webappUrlPatterns=${BASE_URL}, ${BASE_URL}/* , royalroad.com, royalroad.com/* --user-agent-string=${USER_AGENT}"
 
 # Get the URL passed as an argument (%u)
 INPUT_URL="$1"
