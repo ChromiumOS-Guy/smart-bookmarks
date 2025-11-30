@@ -2,5 +2,10 @@
     {
 		"protocol": "https",
 		"domain-suffix": "www.waze.com"
+	},
+
+    {
+		"protocol": "http",
+		"domain-suffix": "www.waze.com"
 	}
 ]
